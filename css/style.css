@@ -23,6 +23,9 @@ h1 {
 /*1. Centera boxen */
 section#part-blue {
   background-color:rgba(0, 162, 255,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -30,18 +33,26 @@ section#part-blue {
   width:100px;
   height:100px;
   background-color: royalblue;
+
+
   }
 
 /*2. Sprid ut länkarna jämnt horisontellt*/
 
 section#part-orange {
   background-color:rgba(250, 182, 71, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* 3. Stapla boxarna vertikalt */
 section#part-pink {
   background-color: pink;
-  display:flex
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 section#part-pink .column-box {
@@ -56,13 +67,14 @@ section#part-pink .column-box {
 section#part-green {
   background-color: rgba(150, 255, 118,1);
   display:flex;
+  flex-wrap: wrap;
   
 }
 
 section#part-green article {
   width:25%;
   margin:5px;
-  height:100px;
+  height:200px;
   background-color:rgba(0, 161, 0, 1);
 }
 
@@ -72,12 +84,13 @@ section#part-brown {
   background-color: rgba(172, 103, 64, 1);
   display:flex;
   align-items:center;
-  justify-content:center;  
+  justify-content:center; 
+  flex-direction: row-reverse; 
 }
 
 section#part-brown article {
-  height:100px;
-  width:100px;
+  height:200px;
+  width:200px;
 }
 
 #part-brown article:nth-child(1) {
@@ -115,6 +128,8 @@ section#part-grey div {
   overflow: hidden;
 }
 section#part-grey div#double-trouble {
+
+  flex-basis: auto;
   
 }
 
